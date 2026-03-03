@@ -45,3 +45,25 @@ public class Animal {
         gato.printStatus();
     }
 }
+
+*/ OutPut
+
+Nome Animal: Bob
+Cor Animal: Marrom
+Número de Patas: 4
+Tem Rabo: true
+Voa? false
+Idade Animal: 5
+Peso Animal: 12.0
+Carnívoro: true
+---------------------------
+Nome Animal: Mike
+Cor Animal: Branco
+Número de Patas: 4
+Tem Rabo: true
+Voa? false
+Idade Animal: 2
+Peso Animal: 4.0
+Carnívoro: true
+---------------------------
+/*
