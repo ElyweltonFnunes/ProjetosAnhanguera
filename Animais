@@ -1,0 +1,47 @@
+public class Animal {
+
+    String nomeAnimal;   
+    String corAnimal;
+    int numeroDePatas;
+    boolean temRabo;
+    boolean voa;
+    int idadeAnimal;
+    float pesoAnimal;
+    boolean carnivoro;
+    
+    public void printStatus() {
+        System.out.println("Nome Animal: " + nomeAnimal);
+        System.out.println("Cor Animal: " + corAnimal);
+        System.out.println("Número de Patas: " + numeroDePatas);
+        System.out.println("Tem Rabo: " + temRabo);
+        System.out.println("Voa? " + voa);
+        System.out.println("Idade Animal: " + idadeAnimal);
+        System.out.println("Peso Animal: " + pesoAnimal);
+        System.out.println("Carnívoro: " + carnivoro);
+        System.out.println("---------------------------");
+    }
+    public static void main(String[] args) {
+        Animal cachorro = new Animal();
+        cachorro.nomeAnimal = "Bob";
+        cachorro.corAnimal = "Marrom";
+        cachorro.numeroDePatas = 4;
+        cachorro.temRabo = true;
+        cachorro.voa = false;
+        cachorro.idadeAnimal = 5;
+        cachorro.pesoAnimal = 12.0f;
+        cachorro.carnivoro = true;
+        
+        Animal gato = new Animal();
+        gato.nomeAnimal = "Mike";
+        gato.corAnimal = "Branco";
+        gato.numeroDePatas = 4;
+        gato.temRabo = true;
+        gato.voa = false;
+        gato.idadeAnimal = 2;
+        gato.pesoAnimal = 4.0f;
+        gato.carnivoro = true;
+        
+        cachorro.printStatus();
+        gato.printStatus();
+    }
+}
