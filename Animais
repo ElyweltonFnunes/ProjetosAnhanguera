@@ -1,4 +1,8 @@
+import javax.sound.sampled.*;
+import java.io.File;
+
 public class Animal {
+
 
     String nomeAnimal;   
     String corAnimal;
@@ -44,6 +48,18 @@ public class Animal {
         cachorro.printStatus();
         gato.printStatus();
     }
+        public static void emitirSom(String C:\Users\Aula\Documents\DesafioExtra\Cavalo.mp3) {
+          try {
+        File arquivo = new File(caminho);
+        AudioInputStream audioStream = AudioSystem.getAudioInputStream(arquivo);
+
+        Clip clip = AudioSystem.getClip();
+        clip.open(audioStream);
+        clip.start();
+
+        } catch (Exception e) {
+        System.out.println("Erro ao tocar som: " + e.getMessage());
+    }
 }
 
 */ OutPut
@@ -55,7 +71,7 @@ Tem Rabo: true
 Voa? false
 Idade Animal: 5
 Peso Animal: 12.0
-Carnívoro: true
+Carnívoro: 
 ---------------------------
 Nome Animal: Mike
 Cor Animal: Branco
